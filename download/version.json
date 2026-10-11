@@ -1,0 +1,10 @@
+{
+  "mac": {
+    "version": "0.5.0",
+    "url": "https://davidcvetkovski.github.io/perimeter-site/download/Perimeter-0.5.0.dmg",
+    "notes": "https://davidcvetkovski.github.io/perimeter-site/whats-new"
+  },
+  "iphone": {
+    "version": "0.5.0"
+  }
+}

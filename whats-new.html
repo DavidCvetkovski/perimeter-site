@@ -1,0 +1,126 @@
+<!doctype html>
+<!--
+  Placeholders to change before the site goes live. Search this file for each:
+    david.cvetkovski@gmail.com        the contact address (also at the foot of every page).
+  This page is CHANGELOG.md at the root of the repository, set by hand: the
+  Unreleased section and 0.4, in plainer words. The Mac app's update check
+  points here ("notes" in download/version.json). When 0.5 is released, change
+  "Not out yet" to its date and put the next version above it.
+-->
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>What&rsquo;s new: Perimeter</title>
+  <meta name="description" content="What changed in Perimeter for the person using it, version by version.">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the page</a>
+
+  <header class="bar">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="icon.svg" alt="" width="28" height="28"><span>Perimeter</span></a>
+      <nav class="nav" aria-label="Pages">
+        <a href="index.html#how">How it works</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+        <a href="whats-new.html" aria-current="page">What&rsquo;s new</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+
+      <div class="page-head">
+        <p class="label">What&rsquo;s new</p>
+        <h1>What changed</h1>
+        <p class="lede">What changed for the person using Perimeter, version by version.</p>
+        <div class="strip"></div>
+      </div>
+
+      <article class="release" aria-labelledby="v05">
+        <header>
+          <p class="label"><span class="sq look"></span>Version 0.5 &middot; Not out yet</p>
+          <h2 id="v05">A Mac that sleeps, finished</h2>
+        </header>
+        <p>0.4 stopped blaming the devices for the hours your Mac slept. These are the places it still did.</p>
+        <ul>
+          <li>A device the last check couldn&rsquo;t look for is &ldquo;not checked&rdquo;, never &ldquo;away&rdquo;. That is when your Mac fell asleep in the middle of that check, or when part of Perimeter couldn&rsquo;t see. The group already said so; now the count at the top of the devices says it too, as in &ldquo;27 here now, 3 away, 1 not checked&rdquo;.</li>
+          <li>A device first heard in a check your Mac slept in gets its first-seen square in its week, and its week says the hour it was first seen.</li>
+          <li>A device that stopped answering is quiet since the first check that looked for it, not since a check that began the evening before and finished in the morning.</li>
+          <li>A new device is announced even when another check running at the same time was one your Mac slept in.</li>
+        </ul>
+
+        <h3>If you use the Terminal</h3>
+        <ul>
+          <li>The Terminal&rsquo;s list of devices says &ldquo;not checked&rdquo; too.</li>
+          <li>&ldquo;Back after 9 days away&rdquo;, in the written report, counts only the checks that looked for the device. A holiday your Mac slept through is not nine days away, and a check the Mac slept in is never why a device is back.</li>
+          <li>The report&rsquo;s blind spots say when your Mac was asleep, as in &ldquo;No checks Sun 23:00 &rarr; Mon 07:05: your Mac was asleep&rdquo;, and when the last check is hours old because the Mac went to sleep since.</li>
+        </ul>
+
+        <h3>Behind the scenes</h3>
+        <ul>
+          <li>Every change is now written down in a changelog.</li>
+          <li>The tests run on macOS and Linux, with every version of Python that Perimeter supports, 3.11 to 3.14.</li>
+        </ul>
+      </article>
+
+      <article class="release" aria-labelledby="v04">
+        <header>
+          <p class="label"><span class="sq"></span>Version 0.4 &middot; 6 October 2026</p>
+          <h2 id="v04">The checkup</h2>
+        </header>
+        <p>0.2 and 0.3 said who was on the network and when. 0.4 answers what someone who is not technical asks: <em>is anything wrong, and what do I do?</em></p>
+        <ul>
+          <li><strong>The checkup.</strong> After every check, a short list of notes: what to fix soon, what is worth a look, what is good to know, and under them the checks that passed. Each note says what it is, why it matters and what to do, a step at a time, in the words your router&rsquo;s own settings use. It looks at the doors your router opens to the internet, push-button pairing (WPS), how your Wi-Fi is protected, risky doors left open on devices, new devices, devices that stopped answering, a router that changed or something answering as it, and Perimeter itself. A check passes only if it ran in the last day, so &ldquo;couldn&rsquo;t look&rdquo; never reads as &ldquo;nothing there&rdquo;. It can also be printed in the Terminal.</li>
+          <li><strong>Answering it.</strong> &ldquo;It&rsquo;s mine&rdquo; and &ldquo;I don&rsquo;t know it&rdquo; for a new device (the second becomes a short plan), &ldquo;Got it&rdquo; for anything you expect, which moves to the checks that passed as something you said is expected, and &ldquo;Give it a name&rdquo;. A device answering as the router can be taken as the new router, asked once more first.</li>
+          <li><strong>Names people recognise.</strong> Your name for a device first; then the router&rsquo;s own list of names, which is how phones that announce nothing get one; tidied of serial numbers and tags; the maker as people say it (&ldquo;Xiaomi&rdquo;, not its legal name); and a best guess, with a sentence on what it probably is, where there was &ldquo;Unnamed device&rdquo;.</li>
+          <li><strong>Two sheets.</strong> The checkup opens first; the devices are one swipe, click or switch away, in groups (phones and tablets, computers, TV and sound, smart home, printers, router and Wi-Fi, not sure yet), with look-alikes folded into one row, so eight bulbs are one line, and long groups shortened to &ldquo;Show 7 more&rdquo;. The Terminal has a picture of the same screens, with the same titles.</li>
+          <li><strong>The iPhone</strong> tells you what the Mac announced, once, when it next asks; finds the Mac again when the router gives it a new address; says plainly when you are away from home or the Mac is asleep; and shows the last answer with its age until the Mac answers.</li>
+          <li><strong>The Mac</strong> offers &ldquo;Watch this network&rdquo;, &ldquo;Start it&rdquo; when Perimeter has stopped, &ldquo;Restart checks&rdquo; when the checks have, and &ldquo;Open at login&rdquo;; its notifications come from Perimeter; it checks again the moment it wakes.</li>
+          <li><strong>A Mac that sleeps.</strong> Perimeter writes down when the Mac slept. A gap a sleep explains is said as that, not as &ldquo;Perimeter stopped checking&rdquo;; a device a check missed while the Mac slept in it is &ldquo;not checked&rdquo;, not &ldquo;away&rdquo;; and no notification is sent on the strength of such a check. When the Mac slept through most of the week, a good-to-know note says Perimeter only watched while it was awake.</li>
+          <li><strong>The dashboard</strong> shows the two sheets side by side on a wide screen and under a switch on a narrow one, works from the keyboard, keeps your place through a refresh, says &ldquo;Check now&rdquo;, and says how to start Perimeter again when it has stopped.</li>
+          <li><strong>The words.</strong> Every sentence was read as someone who is not technical would read it, and fixed on every screen and in the Terminal: one word, &ldquo;check&rdquo;, for what Perimeter does; plain words first and the technical one in brackets after; steps that say &ldquo;choose&rdquo; and point at the button below; dates with the day first.</li>
+        </ul>
+      </article>
+
+      <article class="release" aria-labelledby="before">
+        <header>
+          <p class="label">Before 0.4</p>
+          <h2 id="before">The first screens</h2>
+        </header>
+        <p>0.3 (28 September 2026) kept the week an hour at a time, on every screen and every device, and said when an always-on device went quiet. 0.2 (23 September 2026) added the screens: the dashboard, the Mac&rsquo;s menu bar and the iPhone.</p>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div>
+        <p class="label">Perimeter</p>
+        <p>Watches the networks you own, and tells you in plain words who is on them and what is worth fixing.</p>
+        <p>Made by David Cvetkovski. Free for home and other non-commercial use.</p>
+      </div>
+      <div>
+        <p class="label">Pages</p>
+        <ul>
+          <li><a href="index.html#how">How it works</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="whats-new.html">What&rsquo;s new</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="label">Questions</p>
+        <p>Write to <a href="mailto:david.cvetkovski@gmail.com">david.cvetkovski@gmail.com</a>.</p>
+        <p>Please do not send a pairing code: it lets anyone who has it see your devices.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

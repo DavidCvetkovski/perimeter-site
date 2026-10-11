@@ -1,0 +1,274 @@
+<!doctype html>
+<!--
+  Placeholders to change before the site goes live. Search this file for each:
+    https://davidcvetkovski.github.io/perimeter-site/...    this site's own address, and the Mac download.
+                                 The download must be the same address as "url"
+                                 in download/version.json.
+    https://apps.apple.com/...   the iPhone app's App Store page. The dark button
+                                 beside it stands in for Apple's own "Download on
+                                 the App Store" badge: swap it for the real one.
+    david.cvetkovski@gmail.com        the contact address (also at the foot of every page).
+  The app reads the same addresses from apps/Shared/Words.swift.
+-->
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Perimeter: Home Wi-Fi Watch</title>
+  <meta name="description" content="Perimeter watches your home Wi-Fi and tells you, in plain words, who is on it and what is worth fixing. A free Mac app and an iPhone app. Nothing leaves your Mac.">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the page</a>
+
+  <header class="bar">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="icon.svg" alt="" width="28" height="28"><span>Perimeter</span></a>
+      <nav class="nav" aria-label="Pages">
+        <a href="index.html#how">How it works</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+        <a href="whats-new.html">What&rsquo;s new</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+
+      <section class="lot" aria-labelledby="top">
+        <svg class="fence" aria-hidden="true" focusable="false">
+          <rect class="panels" width="100%" height="100%"/>
+          <rect class="look" width="100%" height="100%"/>
+        </svg>
+        <span class="post first"></span>
+        <span class="post second"></span>
+        <p class="label">For your home Wi-Fi</p>
+        <h1 id="top">See who&rsquo;s on your home Wi-Fi</h1>
+        <p class="lede">Perimeter keeps an eye on your home network: who joins, who leaves, and anything on your router worth fixing. It tells you in plain words.</p>
+        <p class="lede">It runs on a Mac that stays at home. Your iPhone and your web browser show what it sees. Everything stays on your Mac.</p>
+        <div class="actions">
+          <a class="button" href="https://davidcvetkovski.github.io/perimeter-site/download/Perimeter-0.5.0.dmg">Download for Mac</a>
+          <a class="badge" href="https://apps.apple.com/app/perimeter/id0000000000"><small>Download on the</small><strong>App Store</strong></a>
+        </div>
+        <p class="small fineprint">Free for home use. No account. For Macs with an Apple chip, on macOS 14 or later; iPhones on iOS 17 or later.</p>
+      </section>
+
+      <section class="section" aria-labelledby="see">
+        <h2 class="head" id="see">What it shows you <span>05</span></h2>
+        <p class="intro">Three screens say the same things in the same words: the iPhone app, the Mac&rsquo;s menu bar and a page in your web browser. Here they are, on a made-up household.</p>
+
+        <article class="feature">
+          <div class="words">
+            <p class="label"><span class="sq look"></span>The checkup</p>
+            <h3>Is anything wrong?</h3>
+            <p>The top of the screen answers that in one line: &ldquo;All clear&rdquo;, or the one thing worth a look.</p>
+            <p>Under it, short notes say what each thing is, why it matters and what to do, a step at a time, in the words your router&rsquo;s own settings page uses. Each says how much it matters in words as well as colour: fix soon, worth a look, or good to know.</p>
+          </div>
+          <figure class="shot">
+            <picture>
+              <source media="(prefers-color-scheme: dark)" srcset="images/iphone-checkup-dark.png">
+              <img src="images/iphone-checkup-light.png" width="600" height="1303" loading="lazy" decoding="async" alt="The Perimeter iPhone app on its checkup screen. The headline reads &ldquo;Your router's push-button pairing (WPS) is on&rdquo;, with 14 devices here now and a bar for every hour of the week. Below are one note worth a look and two that are good to know.">
+            </picture>
+          </figure>
+        </article>
+
+        <article class="feature">
+          <div class="words">
+            <p class="label"><span class="sq"></span>The devices</p>
+            <h3>Who&rsquo;s on your Wi-Fi?</h3>
+            <p>Every phone, laptop, TV, speaker, doorbell and bulb, in groups you recognise, under the names you gave them.</p>
+            <p>A device Perimeter has never seen is the first thing you read about, with two answers: &ldquo;It&rsquo;s mine&rdquo;, or &ldquo;I don&rsquo;t know it&rdquo;. If nobody recognises it, Perimeter gives you a short plan.</p>
+          </div>
+          <figure class="shot">
+            <picture>
+              <source media="(prefers-color-scheme: dark)" srcset="images/iphone-devices-dark.png">
+              <img src="images/iphone-devices-light.png" width="600" height="1303" loading="lazy" decoding="async" alt="The devices screen: 14 here now and 2 away, then groups of devices by name: phones and tablets, computers, TV and sound, and smart home.">
+            </picture>
+          </figure>
+        </article>
+
+        <article class="feature">
+          <div class="words">
+            <p class="label"><span class="sq know"></span>A note</p>
+            <h3>What to do about it, one step at a time</h3>
+            <p>Every note says what is normal before what is worrying, and puts the plain words before any technical one. A button opens your router&rsquo;s own settings page.</p>
+            <p>Anything you are happy to live with, you put aside with &ldquo;Got it&rdquo;. It moves to the checks that passed, and comes back only if something changes.</p>
+          </div>
+          <figure class="shot">
+            <picture>
+              <source media="(prefers-color-scheme: dark)" srcset="images/iphone-note-dark.png">
+              <img src="images/iphone-note-light.png" width="600" height="1303" loading="lazy" decoding="async" alt="A note on the iPhone: &ldquo;Your smart gadgets share a network with your computers&rdquo;, with why it matters, three numbered steps to take and a &ldquo;Got it&rdquo; button.">
+            </picture>
+          </figure>
+        </article>
+
+        <article class="feature">
+          <div class="words">
+            <p class="label"><span class="sq"></span>A device</p>
+            <h3>Each one, and anything about it</h3>
+            <p>Open a device to see what it probably is, when it first joined, and any note that points at it.</p>
+            <p>Give it a name and it keeps that name, whatever it calls itself. Here is a router, with the note about its push-button pairing (WPS).</p>
+          </div>
+          <figure class="shot">
+            <picture>
+              <source media="(prefers-color-scheme: dark)" srcset="images/iphone-device-dark.png">
+              <img src="images/iphone-device-light.png" width="600" height="1303" loading="lazy" decoding="async" alt="A device on the iPhone: the router, with a note that its push-button pairing is on, three steps to turn it off, and its details underneath.">
+            </picture>
+          </figure>
+        </article>
+
+        <article class="feature">
+          <div class="words">
+            <p class="label"><span class="sq"></span>The week</p>
+            <h3>Your week, an hour at a time</h3>
+            <p>Run a finger along the week at the top of the checkup and the whole screen goes back to that hour: who was here, and who had not arrived yet.</p>
+            <p>Each device ends with its own week, a square for every hour. An hour when nothing could look, because the Mac was asleep, is marked as that, never as &ldquo;away&rdquo;.</p>
+          </div>
+          <figure class="shot">
+            <picture>
+              <source media="(prefers-color-scheme: dark)" srcset="images/iphone-week-dark.png">
+              <img src="images/iphone-week-light.png" width="600" height="1303" loading="lazy" decoding="async" alt="One device's week on the iPhone: a square for every hour of the last seven days, green where it was seen and hollow where it was not.">
+            </picture>
+          </figure>
+        </article>
+      </section>
+
+      <section class="section" aria-labelledby="mac">
+        <h2 class="head" id="mac">On your Mac</h2>
+        <p class="intro">The Mac app puts a small mark in the menu bar, with a number beside it when something needs a look, and a panel under it. Choose &ldquo;Dashboard&rdquo; and the same two screens open in your web browser: the checkup on the left, the devices on the right.</p>
+        <figure class="shot wide-shot">
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="images/dashboard-dark.png">
+            <img src="images/dashboard-light.png" width="1280" height="1387" loading="lazy" decoding="async" alt="The Perimeter dashboard in a wide browser window: the checkup on the left, with its headline and a bar for every hour of the week, and the devices on the right, in groups.">
+          </picture>
+          <figcaption class="small">The dashboard in a wide window, on the same made-up household.</figcaption>
+        </figure>
+      </section>
+
+      <section class="section" aria-labelledby="how">
+        <h2 class="head" id="how">How it works <span>05</span></h2>
+        <p class="intro">Five steps. None of them needs anything technical.</p>
+        <ol class="notes">
+          <li>
+            <span class="num">01</span>
+            <div class="body">
+              <h3>Put it on a Mac that stays at home</h3>
+              <p>Download Perimeter for Mac, open the file and drag Perimeter into your Applications folder. Open it: a small mark appears in your menu bar. Choose &ldquo;Set up Perimeter&rdquo; once. There is nothing to type and nothing else to install.</p>
+            </div>
+          </li>
+          <li>
+            <span class="num">02</span>
+            <div class="body">
+              <h3>Say which network is yours</h3>
+              <p>Choose &ldquo;Watch this network&rdquo;. Perimeter shows you the network it is on and asks first. It looks at nothing you have not chosen, so a laptop taken to a caf&eacute; does nothing there.</p>
+            </div>
+          </li>
+          <li>
+            <span class="num">03</span>
+            <div class="body">
+              <h3>Give it a day to learn</h3>
+              <p>For the first 24 hours Perimeter learns what normally lives on your Wi-Fi. Phones wander home all evening, and none of them is news. After that, a device it has never seen is the first thing you read about.</p>
+            </div>
+          </li>
+          <li>
+            <span class="num">04</span>
+            <div class="body">
+              <h3>Read the checkup</h3>
+              <p>Every five minutes it looks again and writes a short list. The top line answers &ldquo;is anything wrong?&rdquo;. Under it are notes, each saying what it is, why it matters and what to do. It tells you, once, when something needs a look.</p>
+            </div>
+          </li>
+          <li>
+            <span class="num">05</span>
+            <div class="body">
+              <h3>Add your iPhone, if you like</h3>
+              <p>In the menu bar, choose &ldquo;Pair iPhone&rdquo; and point your iPhone&rsquo;s Camera at the code. From then on your iPhone talks straight to your Mac over your home Wi-Fi. The Mac does the checking; the iPhone shows what the Mac sees, so it has news while the Mac is at home and awake.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="section" aria-labelledby="checks">
+        <h2 class="head" id="checks">What it checks <span>07</span></h2>
+        <p class="intro">What a careful neighbour would look at, and then say what to fix.</p>
+        <dl class="facts">
+          <div><dt>Doors to the internet</dt><dd>Games, video calls and file-sharing apps ask your router to let the internet in, and so does malware. Perimeter asks the router what is open now, and says which doors belong to an app you would know.</dd></div>
+          <div><dt>Push-button pairing</dt><dd>Push-button pairing (WPS) lets someone in range guess their way to your Wi-Fi password. Perimeter tells you when your router has it on.</dd></div>
+          <div><dt>Wi-Fi protection</dt><dd>Whether your Wi-Fi is open, or protected in an old way that can be broken.</dd></div>
+          <div><dt>Risky doors on devices</dt><dd>Old-style login, file transfer, remote desktop. About once a day each device on your own network gets a single knock: a connection opened and closed at once. Nothing is sent, and no password is tried.</dd></div>
+          <div><dt>New and quiet devices</dt><dd>A device Perimeter has never seen, and the ones meant to be on all the time, like a camera or a printer, when they stop answering.</dd></div>
+          <div><dt>Your router</dt><dd>When it changes, or when something else on your network answers as if it were the router.</dd></div>
+          <div><dt>Gadgets</dt><dd>Four or more smart bulbs, plugs, cameras and TVs on the same network as your computers, and a suggestion to give them a guest network.</dd></div>
+        </dl>
+      </section>
+
+      <section class="section" aria-labelledby="private">
+        <h2 class="head clear" id="private">Private by design</h2>
+        <div class="aside">
+          <p><strong>Everything Perimeter learns about your network stays on your Mac.</strong> There is no account, no sign-in, no tracking, no analytics and no adverts, and nothing is sent to us.</p>
+          <p>The one thing it can fetch from the internet is a public list of hardware makers, and only when you ask. Your iPhone talks straight to your Mac over your home Wi-Fi, encrypted. Nothing goes through the internet, or through anyone else&rsquo;s servers.</p>
+          <p><a href="privacy.html">Read the privacy policy</a></p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="not">
+        <h2 class="head" id="not">What it does not do</h2>
+        <ul class="plain">
+          <li>It never looks at a network you have not told it to watch.</li>
+          <li>It never changes your router. It tells you where to click.</li>
+          <li>It never logs in to anything.</li>
+          <li>It never sends a hardware address (MAC) anywhere, not even to your iPhone.</li>
+        </ul>
+        <p class="more"><a href="support.html#not">More on what it does not do, and where it cannot see</a></p>
+      </section>
+
+      <section class="section" aria-labelledby="get">
+        <h2 class="head" id="get">Get Perimeter</h2>
+        <div class="gets">
+          <div class="get">
+            <p class="label">For your Mac</p>
+            <h3>Perimeter for Mac</h3>
+            <p>Free. It lives in your menu bar and does the checking.</p>
+            <a class="button" href="https://davidcvetkovski.github.io/perimeter-site/download/Perimeter-0.5.0.dmg">Download for Mac</a>
+            <p class="small">Version 0.5.0. For Macs with an Apple chip, on macOS 14 or later. Open the download and drag Perimeter into Applications.</p>
+          </div>
+          <div class="get">
+            <p class="label">For your iPhone</p>
+            <h3>Perimeter: Home Wi-Fi Watch</h3>
+            <p>Free. It shows what your Mac sees, with a widget for your home screen. It needs the Mac app, and it has a sample home to look at first.</p>
+            <a class="badge" href="https://apps.apple.com/app/perimeter/id0000000000"><small>Download on the</small><strong>App Store</strong></a>
+            <p class="small">For iPhones on iOS 17 or later.</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div>
+        <p class="label">Perimeter</p>
+        <p>Watches the networks you own, and tells you in plain words who is on them and what is worth fixing.</p>
+        <p>Made by David Cvetkovski. Free for home and other non-commercial use.</p>
+      </div>
+      <div>
+        <p class="label">Pages</p>
+        <ul>
+          <li><a href="index.html#how">How it works</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="whats-new.html">What&rsquo;s new</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="label">Questions</p>
+        <p>Write to <a href="mailto:david.cvetkovski@gmail.com">david.cvetkovski@gmail.com</a>.</p>
+        <p>Please do not send a pairing code: it lets anyone who has it see your devices.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

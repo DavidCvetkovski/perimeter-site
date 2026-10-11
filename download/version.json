@@ -2,7 +2,7 @@
   "mac": {
     "version": "0.5.0",
     "url": "https://github.com/DavidCvetkovski/perimeter-site/releases/download/v0.5/Perimeter-0.5.0.dmg",
-    "notes": "https://davidcvetkovski.github.io/perimeter-site/whats-new.html"
+    "notes": "https://davidcvetkovski.github.io/perimeter-site/whats-new"
   },
   "iphone": {
     "version": "0.5.0"
